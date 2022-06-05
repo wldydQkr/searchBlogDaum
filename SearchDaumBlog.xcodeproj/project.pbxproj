@@ -23,6 +23,9 @@
 		C0382970284B6C730054B57D /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038296F284B6C720054B57D /* BlogList.swift */; };
 		C0382972284B6CAC0054B57D /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0382971284B6CAC0054B57D /* BlogListCell.swift */; };
 		C0382974284B6CBA0054B57D /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0382973284B6CBA0054B57D /* BlogListCellData.swift */; };
+		C0EC5344284D0CC400F2C42D /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC5343284D0CC400F2C42D /* DKBlog.swift */; };
+		C0EC5346284D0FEE00F2C42D /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC5345284D0FEE00F2C42D /* SearchBlogAPI.swift */; };
+		C0EC5349284D10C400F2C42D /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC5348284D10C400F2C42D /* SearchBlogNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		C038296F284B6C720054B57D /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
 		C0382971284B6CAC0054B57D /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
 		C0382973284B6CBA0054B57D /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
+		C0EC5343284D0CC400F2C42D /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
+		C0EC5345284D0FEE00F2C42D /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		C0EC5348284D10C400F2C42D /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 				C0382948284B5F520054B57D /* AppDelegate.swift */,
 				C038294A284B5F520054B57D /* SceneDelegate.swift */,
 				C0382976284B6CDE0054B57D /* Entities */,
+				C0EC5347284D0FF500F2C42D /* Network */,
 				C0382975284B6CCC0054B57D /* Presentation */,
 				C0382951284B5F530054B57D /* Assets.xcassets */,
 				C0382953284B5F530054B57D /* LaunchScreen.storyboard */,
@@ -100,6 +107,7 @@
 			children = (
 				C0382973284B6CBA0054B57D /* BlogListCellData.swift */,
 				C0106FC3284BC5C1009E84C8 /* AlertActionConvertible.swift */,
+				C0EC5343284D0CC400F2C42D /* DKBlog.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -146,6 +154,15 @@
 				C0382971284B6CAC0054B57D /* BlogListCell.swift */,
 			);
 			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		C0EC5347284D0FF500F2C42D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C0EC5345284D0FEE00F2C42D /* SearchBlogAPI.swift */,
+				C0EC5348284D10C400F2C42D /* SearchBlogNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,12 +249,15 @@
 			files = (
 				C038296A284B61DE0054B57D /* MainViewController.swift in Sources */,
 				C0382972284B6CAC0054B57D /* BlogListCell.swift in Sources */,
+				C0EC5344284D0CC400F2C42D /* DKBlog.swift in Sources */,
 				C0382970284B6C730054B57D /* BlogList.swift in Sources */,
+				C0EC5346284D0FEE00F2C42D /* SearchBlogAPI.swift in Sources */,
 				C0382974284B6CBA0054B57D /* BlogListCellData.swift in Sources */,
 				C038296C284B630D0054B57D /* SearchBar.swift in Sources */,
 				C0382949284B5F520054B57D /* AppDelegate.swift in Sources */,
 				C038296E284B69590054B57D /* FilterView.swift in Sources */,
 				C038294B284B5F520054B57D /* SceneDelegate.swift in Sources */,
+				C0EC5349284D10C400F2C42D /* SearchBlogNetwork.swift in Sources */,
 				C0106FC4284BC5C1009E84C8 /* AlertActionConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
