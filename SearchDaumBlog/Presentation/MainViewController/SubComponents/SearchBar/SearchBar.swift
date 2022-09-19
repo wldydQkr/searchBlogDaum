@@ -15,16 +15,9 @@ class SearcBar: UISearchBar {
     
     let searchButton = UIButton()
     
-    // SearchBar 탭 이벤트
-    let searchButtonTapped = PublishRelay<Void>()
-    
-    // SearchBar 외부로 내보낼 이벤트
-    var shouldLoadResult = Observable<String>.of("")
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        bind()
         attribute()
         layout()
     }
@@ -33,26 +26,25 @@ class SearcBar: UISearchBar {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func bind() {
-        // searchBar searchButton tapped
-        // button tapped
+    private func bind(_ viewModel: SearchBarViewModel) {
+        
+        self.rx.text
+            .bind(to: viewModel.quertyText)
+            .disposed(by: disposeBag)
+        
          Observable
             .merge(
                 self.rx.searchButtonClicked.asObservable(),
                 searchButton.rx.tap.asObservable()
             )
-            .bind(to: searchButtonTapped)
+            .bind(to: viewModel.searchButtonTapped)
             .disposed(by: disposeBag)
         
-        searchButtonTapped
+        viewModel.searchButtonTapped
             .asSignal()
             .emit(to: self.rx.endEditing) // tap 이벤트가 발생했을 때 키보드가 잘 내려감
             .disposed(by: disposeBag)
         
-        self.shouldLoadResult = searchButtonTapped
-            .withLatestFrom(self.rx.text) { $1 ?? "" } // nil이면 빈값
-            .filter { !$0.isEmpty }
-            .distinctUntilChanged()
     }
     
     private func attribute() {
