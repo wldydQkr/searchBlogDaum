@@ -12,6 +12,8 @@
 		C012FD5B28D88AAA00A755C0 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012FD5A28D88AAA00A755C0 /* FilterViewModel.swift */; };
 		C012FD5E28D88B8800A755C0 /* BlogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012FD5D28D88B8800A755C0 /* BlogListViewModel.swift */; };
 		C012FD6028D88C5100A755C0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012FD5F28D88C5100A755C0 /* MainViewModel.swift */; };
+		C012FD6228D8BC1200A755C0 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012FD6128D8BC1200A755C0 /* MainModel.swift */; };
+		C012FD6428D8C8B200A755C0 /* SearchNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C012FD6328D8C8B200A755C0 /* SearchNetworkError.swift */; };
 		C0382949284B5F520054B57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0382948284B5F520054B57D /* AppDelegate.swift */; };
 		C038294B284B5F520054B57D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C038294A284B5F520054B57D /* SceneDelegate.swift */; };
 		C0382952284B5F530054B57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0382951284B5F530054B57D /* Assets.xcassets */; };
@@ -28,7 +30,6 @@
 		C0382972284B6CAC0054B57D /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0382971284B6CAC0054B57D /* BlogListCell.swift */; };
 		C0382974284B6CBA0054B57D /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0382973284B6CBA0054B57D /* BlogListCellData.swift */; };
 		C0EC5344284D0CC400F2C42D /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC5343284D0CC400F2C42D /* DKBlog.swift */; };
-		C0EC5346284D0FEE00F2C42D /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC5345284D0FEE00F2C42D /* SearchBlogAPI.swift */; };
 		C0EC5349284D10C400F2C42D /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC5348284D10C400F2C42D /* SearchBlogNetwork.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		C012FD5A28D88AAA00A755C0 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		C012FD5D28D88B8800A755C0 /* BlogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListViewModel.swift; sourceTree = "<group>"; };
 		C012FD5F28D88C5100A755C0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C012FD6128D8BC1200A755C0 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		C012FD6328D8C8B200A755C0 /* SearchNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkError.swift; sourceTree = "<group>"; };
 		C0382945284B5F520054B57D /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0382948284B5F520054B57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C038294A284B5F520054B57D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		C0382971284B6CAC0054B57D /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
 		C0382973284B6CBA0054B57D /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 		C0EC5343284D0CC400F2C42D /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
-		C0EC5345284D0FEE00F2C42D /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
 		C0EC5348284D10C400F2C42D /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C0382973284B6CBA0054B57D /* BlogListCellData.swift */,
+				C012FD6328D8C8B200A755C0 /* SearchNetworkError.swift */,
 				C0106FC3284BC5C1009E84C8 /* AlertActionConvertible.swift */,
 				C0EC5343284D0CC400F2C42D /* DKBlog.swift */,
 			);
@@ -143,6 +146,7 @@
 			children = (
 				C0382969284B61DE0054B57D /* MainViewController.swift */,
 				C012FD5F28D88C5100A755C0 /* MainViewModel.swift */,
+				C012FD6128D8BC1200A755C0 /* MainModel.swift */,
 				C0382977284B790C0054B57D /* SubComponents */,
 			);
 			path = MainViewController;
@@ -179,7 +183,6 @@
 		C0EC5347284D0FF500F2C42D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C0EC5345284D0FEE00F2C42D /* SearchBlogAPI.swift */,
 				C0EC5348284D10C400F2C42D /* SearchBlogNetwork.swift */,
 			);
 			path = Network;
@@ -272,13 +275,14 @@
 				C0382972284B6CAC0054B57D /* BlogListCell.swift in Sources */,
 				C0EC5344284D0CC400F2C42D /* DKBlog.swift in Sources */,
 				C0382970284B6C730054B57D /* BlogList.swift in Sources */,
-				C0EC5346284D0FEE00F2C42D /* SearchBlogAPI.swift in Sources */,
 				C0382974284B6CBA0054B57D /* BlogListCellData.swift in Sources */,
 				C012FD5E28D88B8800A755C0 /* BlogListViewModel.swift in Sources */,
 				C038296C284B630D0054B57D /* SearchBar.swift in Sources */,
 				C0382949284B5F520054B57D /* AppDelegate.swift in Sources */,
 				C038296E284B69590054B57D /* FilterView.swift in Sources */,
+				C012FD6228D8BC1200A755C0 /* MainModel.swift in Sources */,
 				C038294B284B5F520054B57D /* SceneDelegate.swift in Sources */,
+				C012FD6428D8C8B200A755C0 /* SearchNetworkError.swift in Sources */,
 				C012FD5928D8890C00A755C0 /* SearchBarViewModel.swift in Sources */,
 				C0EC5349284D10C400F2C42D /* SearchBlogNetwork.swift in Sources */,
 				C0106FC4284BC5C1009E84C8 /* AlertActionConvertible.swift in Sources */,

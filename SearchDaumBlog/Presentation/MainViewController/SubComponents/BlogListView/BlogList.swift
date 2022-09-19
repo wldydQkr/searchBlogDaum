@@ -30,7 +30,7 @@ class BlogListView: UITableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func bind(_ viewModel: BlogListViewModel) {
+    func bind(_ viewModel: BlogListViewModel) {
         
         headerView.bind(viewModel.filterViewModel)
         

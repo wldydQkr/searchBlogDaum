@@ -26,7 +26,7 @@ class SearcBar: UISearchBar {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func bind(_ viewModel: SearchBarViewModel) {
+    func bind(_ viewModel: SearchBarViewModel) {
         
         self.rx.text
             .bind(to: viewModel.quertyText)
